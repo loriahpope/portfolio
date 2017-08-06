@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Megrim");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+body {
+  background-color: #275268; }
+  body nav a.navbar-brand {
+    color: #275268;
+    font-family: "Megrim", cursive; }
+  body nav .nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  body .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 5vh;
+    line-height: 5vh;
+    background-color: #e8f2f2;
+    color: #275268; }
+    body .footer a {
+      color: #275268;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      text-transform: none; }
+      body .footer a:hover, body .footer a:visited, body .footer a:focus {
+        color: #275268;
+        text-decoration: none; }
+      body .footer a i {
+        font-size: 13px; }
+  body .vertical-content {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  body .h1-homepage,
+  body .h2-homepage,
+  body .h3-homepage {
+    color: #e8f2f2;
+    white-space: nowrap; }
+  body .h1-homepage {
+    font-family: "Megrim", cursive;
+    font-size: 16vmin; }
+  body .h2-homepage,
+  body .h3-homepage {
+    font-family: "Open Sans", sans-serif; }
+  body .h2-homepage {
+    font-size: 3vmin;
+    font-weight: 600;
+    padding: 20px 0; }
+  body .h3-homepage {
+    font-size: 2vmin;
+    font-weight: 300; }
+  body #portfolio-button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+    body #portfolio-button.btn-outline-primary {
+      color: #e8f2f2;
+      border-color: #e8f2f2; }
+    body #portfolio-button:hover, body #portfolio-button:active {
+      background-color: #e8f2f2;
+      color: #275268; }
+  body .portfolio-item {
+    padding: 30px 0; }
+  body .h1-site,
+  body .h2-site {
+    color: #e8f2f2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600; }
+  body .h2-site {
+    font-size: 1.5rem; }
+  body p {
+    color: #e8f2f2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+    body p.project-description {
+      font-size: .8rem; }

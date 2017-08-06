@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Megrim')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600')
+
+$blue-dark: #275268
+$blue-light: #e8f2f2
+$fancy-font: 'Megrim', cursive
+$normal-font: 'Open Sans', sans-serif
+
+
+$home-background-color: $blue-dark
+$home-text-color: $blue-light
+$home-footer-background-color: $blue-light
+$home-footer-text-color: $blue-dark
+$home-h1-font: $fancy-font
+$home-font: $normal-font
+
+body
+  background-color: $home-background-color
+
+  nav
+    //background-color: $blue-light
+    a
+      &.navbar-brand
+        color: $blue-dark
+        font-family: $fancy-font
+    .nav-link
+
+      font-family: $normal-font
+      font-weight: 300
+
+
+
+  .footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    min-height: 5vh
+    line-height: 5vh
+    background-color: $home-footer-background-color
+    color: $home-footer-text-color
+
+    a
+      color: $home-footer-text-color
+      font-family: $home-font
+      font-size: 13px
+      text-transform: none
+      &:hover,
+      &:visited,
+      &:focus
+        color: $home-footer-text-color
+        text-decoration: none
+      i
+        font-size: 13px
+
+  .vertical-content
+    position: fixed
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+  .h1-homepage,
+  .h2-homepage,
+  .h3-homepage
+    color: $home-text-color
+    white-space: nowrap
+
+  .h1-homepage
+    font-family: $home-h1-font
+    font-size: 16vmin
+
+  .h2-homepage,
+  .h3-homepage
+    font-family: $home-font
+
+  .h2-homepage
+    font-size: 3vmin
+    font-weight: 600
+    padding: 20px 0
+
+  .h3-homepage
+    font-size: 2vmin
+    font-weight: 300
+
+  #portfolio-button
+    font-family: $home-font
+    font-weight: 300
+    &.btn-outline-primary
+      color: $blue-light
+      border-color: $blue-light
+    &:hover,
+    &:active
+      background-color: $blue-light
+      color: $blue-dark
+
+  .portfolio-item
+    padding: 30px 0
+
+  .h1-site,
+  .h2-site
+    color: $home-text-color
+    font-family: $home-font
+    font-weight: 600
+
+  .h2-site
+    font-size: 1.5rem
+
+  p
+    color: $home-text-color
+    font-family: $home-font
+    font-weight: 300
+    &.project-description
+      font-size: .8rem
