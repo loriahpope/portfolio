@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Megrim')
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,800')
 
 $blue-dark: #275268
 $blue-light: #e8f2f2
@@ -16,6 +16,8 @@ $home-font: $normal-font
 
 body
   background-color: $home-background-color
+  &.portfolio-demo
+    background-color: #FFFFFF
 
   nav
     //background-color: $blue-light
@@ -53,13 +55,16 @@ body
         font-size: 13px
 
   .vertical-content
-    position: fixed
     top: 50%
     -webkit-transform: translateY(-50%)
     -moz-transform: translateY(-50%)
     -ms-transform: translateY(-50%)
     -o-transform: translateY(-50%)
     transform: translateY(-50%)
+    &.fixed
+      position: fixed
+    &.relative
+      position: relative
 
   .h1-homepage,
   .h2-homepage,
@@ -97,6 +102,15 @@ body
 
   .portfolio-item
     padding: 30px 0
+
+    a
+      padding-left: 0
+      color: $blue-light
+      font-family: $normal-font
+      font-weight: 300
+      font-size: .8rem
+      &:hover
+        text-decoration: underline
 
   .h1-site,
   .h2-site
