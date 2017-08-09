@@ -1,9 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Megrim");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
 body {
   background-color: #275268; }
   body.portfolio-demo {
     background-color: #FFFFFF; }
+    body.portfolio-demo .h1-site,
+    body.portfolio-demo .h2-site,
+    body.portfolio-demo p {
+      color: #333333; }
+  body .portfolio-demo-button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+    body .portfolio-demo-button.btn-outline-primary {
+      background-color: #275268;
+      color: #e8f2f2;
+      border-color: #e8f2f2; }
+    body .portfolio-demo-button:hover, body .portfolio-demo-button:active {
+      background-color: #e8f2f2;
+      color: #275268; }
   body nav a.navbar-brand {
     color: #275268;
     font-family: "Megrim", cursive; }

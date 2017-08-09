@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Employee Help</title>
+
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+<body class="portfolio-demo" ng-app="HelpDemo">
+
+<div class="container-fluid" ng-controller="HelpDemoController">
+    <div class="row nav-demo">
+        <p style="color: #333333; padding-left: 10px; margin-top: 14px;">Site Navigation</p>
+    </div>
+    <div class="row">
+        <h1 class="h1-demo">{{demoTitle}}</h1>
+    </div>
+    <!-- Show on large breakpoints -->
+    <div class="row hidden-sm-down">
+        <div class="col-xs-12 col-lg-8" style="padding-bottom: 20px;">
+            <div class="form-group">
+                <input class="form-control input-demo" type="text" placeholder="{{demoSearchPlaceholder}}">
+            </div>
+            <div>
+                <div class="row categories" style="margin-top: 20px;">
+                    <div class="col-4">
+                        <ul class="list-group">
+                            <li class="list-group-item" ng-repeat="category in categories" ng-class="(selectedCategory == category) ? 'selected-category' : ''"  ng-click="selectCategory($event, category)">{{category.name}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-8">
+                        <h3 class="h3-demo">{{selectedCategory.name}}</h3>
+                        <div ng-repeat="question in selectedCategory.questions">
+                            <p class="question-title">
+                                {{question.title}}
+                            </p>
+                            <p class="demo-text">
+                                {{question.answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 demo-text">
+            <div class="row">
+                <p class="col-10" style="color: #333333;">
+                    You have completed <strong>{{completedSteps()}}</strong> of <strong>{{selfHelpSteps.length}}</strong> self-help setup steps!
+                </p>
+                <p class="col-2 text-right">
+                    <a href="" ng-click="viewSteps()">
+                        <span ng-if="!showSteps">Finish</span>
+                        <span ng-if="showSteps">Close</span>
+                    </a>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" ng-style="{'width' : ((completedSteps()/selfHelpSteps.length)*100)+'%'}" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-show="showSteps" style="margin-top: 20px">
+                <div class="col-12">
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="step in selfHelpSteps">
+                            <div class="col-6">
+                                <span ng-if="step.completed" style="padding-right:30px; color: green;"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                <span ng-if="!step.completed" style="padding-right:30px; color: red;"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                {{step.title}}
+                            </div>
+                            <div class="col-6 text-right">
+                                <a href="" ng-click="completeStep(step)"><span ng-if="!step.completed">Complete</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-12">
+                    <h2 class="h2-demo">Contact Us</h2>
+                    <p class="demo-text">
+                        Chat with an Agent (3 minute wait)
+                    </p>
+                    <p class="demo-text">
+                        US Support: +1 (855) 123-4567 (5 minute wait)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Show on small breakpoints -->
+    <div class="row hidden-md-up" style="padding-bottom: 20px;">
+        <div class="col-12">
+            <h2 class="h2-demo">Contact Us</h2>
+            <p class="demo-text">
+                Chat with an Agent (3 minute wait)
+            </p>
+            <p class="demo-text">
+                US Support: +1 (855) 123-4567 (5 minute wait)</a>
+            </p>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <input class="form-control input-demo" type="text" placeholder="What do you need help with?">
+            </div>
+            <div class="form-group">
+                <label for="CategorySelection">Select a Category</label>
+                <select class="col-12 mobile-select" id="CategorySelection" name="CategorySelection" ng-options="category.name for category in categories" ng-model="selectedCategory" ng-change="selectMobile(category)">
+                </select>
+            </div>
+            <div class="col-12">
+                <h3 class="h3-demo">{{selectedCategory.name}}</h3>
+                <div ng-repeat="question in selectedCategory.questions">
+                    <p class="question-title">
+                        {{question.title}}
+                    </p>
+                    <p class="demo-text">
+                        {{question.answer}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <p class="col-10" style="color: #333333;">
+                You have completed <strong>{{completedSteps()}}</strong> of <strong>{{selfHelpSteps.length}}</strong> self-help setup steps!
+            </p>
+            <p class="col-2 text-right">
+                <a href="" ng-click="viewSteps()">
+                    <span ng-if="!showSteps">Finish</span>
+                    <span ng-if="showSteps">Close</span>
+                </a>
+            </p>
+        </div>
+        <div class="col-12">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" ng-style="{'width' : ((completedSteps()/selfHelpSteps.length)*100)+'%'}" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="col-12" ng-show="showSteps" style="margin-top: 20px">
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="step in selfHelpSteps">
+                    <div class="col-6">
+                        <span ng-if="step.completed" style="padding-right:30px; color: green;"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <span ng-if="!step.completed" style="padding-right:30px; color: red;"><i class="fa fa-times" aria-hidden="true"></i></span>
+                        {{step.title}}
+                    </div>
+                    <div class="col-6 text-right">
+                        <a href="" ng-click="completeStep(step)"><span ng-if="!step.completed">Complete</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="js/main.min.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82457627-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

@@ -29,7 +29,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('useref', function () {
-   return gulp.src('app/*.html')
+   return gulp.src('app/**/*.html')
        .pipe(useref())
        .pipe(gulpIf('*.js', uglify()))
        // .pipe(gulpIf('*.html', htmlmin({collapseWhitespace:true})))
@@ -43,6 +43,11 @@ gulp.task('images', function(){
             interlaced: true
         })))
         .pipe(gulp.dest('dist/images'))
+});
+
+gulp.task('portfolio', function() {
+    return gulp.src('app/portfolio/**/*.html')
+        .pipe(gulp.dest('dist/portfolio'))
 });
 
 gulp.task('fonts', function() {
@@ -65,7 +70,7 @@ gulp.task('cache:clear', function (callback) {
 
 gulp.task('watch', ['browserSync', 'sass'], function () {
     gulp.watch('app/styles/sass/**/*.sass', ['sass']);
-    gulp.watch('app/**/*.html', browserSync.reload);
+    gulp.watch('app/**/**/*.html', browserSync.reload);
     gulp.watch('app/scripts/**/*.js', browserSync.reload);
 });
 
@@ -73,7 +78,7 @@ gulp.task('build', function (callback) {
    runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'assets'], callback)
 });
 
-gulp.task('build:serve', function (callback) {
+gulp.task('serve:dist', function (callback) {
     runSequence('build', ['default'], callback)
 });
 

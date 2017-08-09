@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Megrim')
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,800')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800')
 
 $blue-dark: #275268
 $blue-light: #e8f2f2
@@ -18,6 +18,22 @@ body
   background-color: $home-background-color
   &.portfolio-demo
     background-color: #FFFFFF
+    .h1-site,
+    .h2-site,
+    p
+      color: #333333
+  .portfolio-demo-button
+    font-family: $home-font
+    font-weight: 300
+    &.btn-outline-primary
+      background-color: $blue-dark
+      color: $blue-light
+      border-color: $blue-light
+    &:hover,
+    &:active
+      background-color: $blue-light
+      color: $blue-dark
+
 
   nav
     //background-color: $blue-light
