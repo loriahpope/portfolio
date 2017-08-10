@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Megrim");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:900");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
 body {
   background-color: #275268; }
   body.portfolio-demo {
@@ -108,87 +105,3 @@ body {
     body p.project-description {
       font-size: .8rem;
       padding-left: 0; }
-
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #333333; }
-  body .h1-details {
-    font-size: 36px;
-    margin: 30px 0;
-    font-weight: 700; }
-  body .h2-details {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 30px 0; }
-  body .h3-details {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 15px 0; }
-  body .subtitle-details {
-    font-weight: 300;
-    font-size: 14px;
-    color: #999999; }
-  body .portfolio-button {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
-    body .portfolio-button.btn-primary {
-      background-color: #275268;
-      color: #e8f2f2;
-      border-color: #275268; }
-      body .portfolio-button.btn-primary:hover, body .portfolio-button.btn-primary:active {
-        background-color: #e8f2f2;
-        color: #275268; }
-    body .portfolio-button.btn-outline-primary {
-      background-color: #e8f2f2;
-      color: #275268;
-      border-color: #275268; }
-      body .portfolio-button.btn-outline-primary:hover, body .portfolio-button.btn-outline-primary:active {
-        background-color: #275268;
-        color: #e8f2f2; }
-  body .details-text {
-    font-size: 14px; }
-
-body {
-  font-family: "Lato", sans-serif; }
-  body .nav-demo {
-    background-color: #f2f2f2;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 14px; }
-  body .h1-demo {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    padding: 20px; }
-  body .h2-demo {
-    font-size: 20px;
-    font-weight: 900;
-    padding: 15px 0; }
-  body .h3-demo {
-    font-size: 18px;
-    font-weight: 900;
-    margin: 15px 0; }
-  body .input-demo {
-    font-size: 12px;
-    color: #cccccc; }
-  body .categories .list-group-item {
-    background-color: #e8f2f2;
-    color: #275268; }
-    body .categories .list-group-item:hover, body .categories .list-group-item:active {
-      background-color: #275268;
-      color: #e8f2f2; }
-  body .question-title {
-    font-size: 14px;
-    font-weight: 900;
-    padding-top: 10px; }
-  body .demo-text {
-    font-size: 14px; }
-  body .selected-category {
-    background-color: #275268 !important;
-    color: #e8f2f2 !important; }
-  body .mobile-select {
-    border-color: #275268;
-    height: 30px;
-    background-color: #FFFFFF;
-    font-family: "Lato", sans-serif;
-    line-height: 30; }
