@@ -1,5 +1,5 @@
-angular.module('HelpDemo', [])
-.controller('HelpDemoController', ['$scope', function ($scope) {
+var HelpDemo = angular.module('HelpDemo', []);
+    HelpDemo.controller('HelpDemoController', ['$scope', function ($scope) {
     $scope.demoTitle = 'ABC Employee Help';
     $scope.demoSearchPlaceholder = 'What do you need help with?';
     $scope.categories = [
@@ -208,8 +208,10 @@ angular.module('HelpDemo', [])
 
 }]);
 
-angular.module('IconDemo', [])
-.controller('IconDemoController', ['$scope', function ($scope) {
+var IconDemo = angular.module('IconDemo', []);
+
+IconDemo.controller('IconDemoController', ['$scope', function ($scope) {
+
     $scope.iconItems= [
         {
             "title": "Double Gear",
@@ -254,4 +256,18 @@ angular.module('IconDemo', [])
             "description": "Solid-Heart Icon"
         }
     ];
+
+}]);
+
+IconDemo.directive('iconDemoModal', [function() {
+    return {
+        restrict: 'E',
+        scope: {
+            model: '='
+        },
+        link: function(scope, elem, attrs) {
+            console.log('elem', elem);
+        },
+        templateUrl: 'icon-demo-modal.html'
+    }
 }]);
