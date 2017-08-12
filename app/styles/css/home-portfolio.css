@@ -2,8 +2,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
 body {
   background-color: #275268; }
+  body.portfolio-main {
+    background-color: #ffffff; }
+    body.portfolio-main .h1-site,
+    body.portfolio-main .h2-site,
+    body.portfolio-main .project-description {
+      color: #333333; }
+    body.portfolio-main .footer {
+      background-color: #275268; }
+      body.portfolio-main .footer a {
+        color: #e8f2f2;
+        font-family: "Open Sans", sans-serif; }
+        body.portfolio-main .footer a:hover, body.portfolio-main .footer a:visited, body.portfolio-main .footer a:focus {
+          color: #e8f2f2;
+          text-decoration: none; }
   body.portfolio-demo {
-    background-color: #FFFFFF; }
+    background-color: #ffffff; }
     body.portfolio-demo .h1-site,
     body.portfolio-demo .h2-site,
     body.portfolio-demo p {
@@ -18,12 +32,14 @@ body {
     body .portfolio-demo-button:hover, body .portfolio-demo-button:active {
       background-color: #e8f2f2;
       color: #275268; }
-  body nav a.navbar-brand {
-    color: #275268;
-    font-family: "Megrim", cursive; }
-  body nav .nav-link {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+  body nav {
+    background-color: #275268; }
+    body nav a.navbar-brand {
+      color: #e8f2f2 !important;
+      font-family: "Megrim", cursive; }
+    body nav .nav-link {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300; }
   body .footer {
     position: fixed;
     bottom: 0;
@@ -81,10 +97,11 @@ body {
       background-color: #e8f2f2;
       color: #275268; }
   body .portfolio-item {
-    padding: 30px 0; }
+    padding: 30px 0;
+    color: #333333; }
     body .portfolio-item a {
       padding-left: 0;
-      color: #e8f2f2;
+      color: #333333;
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
       font-size: .8rem; }

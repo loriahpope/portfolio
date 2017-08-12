@@ -15,10 +15,12 @@
 <body class="portfolio-demo" ng-app="IconDemo">
 
 <div class="container-fluid" style="margin: 54px;" ng-controller="IconDemoController">
-    <h1 class="h1-details">Material Icon Practice</h1>
-    <p class="subtitle-details">
-        In an effort to learn more about Adobe Illustrator, I practiced creating icons in the Material style.
-    </p>
+    <div class="row">
+        <h1 class="h1-details">Material Icon Practice</h1>
+        <p class="subtitle-details">
+            In an effort to learn more about Adobe Illustrator, I practiced creating icons in the Material style.
+        </p>
+    </div>
     <div class="row header-img">
         <h1 class="h1-details">Material Icon Practice</h1>
     </div>
@@ -26,38 +28,33 @@
         <h2 class="h2-details">Icons</h2>
     </div>
     <div class="row">
-        <div class="col-12 col-sm-3 text-center" ng-repeat="icon in iconItems">
-            <img class="img-fluid icon-img" src="../../images/material-icons/{{icon.imgSrc}}" alt="{{icon.alt}}" data-toggle="modal" data-target="#myModal">
+        <div class="col-12 col-sm-6 col-md-3 text-center" ng-repeat="icon in iconItems">
+            <!--<img class="img-fluid icon-img" src="../../images/material-icons/{{icon.imgSrc}}" alt="{{icon.alt}}" data-toggle="modal" data-target="#myModal">-->
+            <img class="img-fluid" src="../../images/material-icons/{{icon.imgSrc}}" alt="{{icon.alt}}">
             <h3 class="h3-details">{{icon.title}}</h3>
             <p>{{icon.description}}</p>
 
+            <!--<icon-demo-modal id="myModal" class="modal fade" role="dialog"></icon-demo-modal>-->
 
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+            <!--<div id="myModal" class="modal fade" role="dialog">-->
+                <!--<div class="modal-dialog">-->
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">{{icon.title}}</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
+                    <!--&lt;!&ndash; Modal content&ndash;&gt;-->
+                    <!--<div class="modal-content">-->
+                        <!--<div class="modal-header">-->
+                            <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                            <!--<h4 class="modal-title">{{icon.title}}</h4>-->
+                        <!--</div>-->
+                        <!--<div class="modal-body">-->
+                            <!--<p>Some text in the modal.</p>-->
+                        <!--</div>-->
+                        <!--<div class="modal-footer">-->
+                            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
-                </div>
-            </div>
-
-
-
-
-
-
-
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
 </div>

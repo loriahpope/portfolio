@@ -13,11 +13,29 @@ $home-footer-background-color: $blue-light
 $home-footer-text-color: $blue-dark
 $home-h1-font: $fancy-font
 $home-font: $normal-font
+$portfolio-background-color: #ffffff
+$portfolio-font-color: #333333
 
 body
   background-color: $home-background-color
+  &.portfolio-main
+    background-color: $portfolio-background-color
+    .h1-site,
+    .h2-site,
+    .project-description
+      color: $portfolio-font-color
+    .footer
+      background-color: $blue-dark
+      a
+        color: $blue-light
+        font-family: $home-font
+        &:hover,
+        &:visited,
+        &:focus
+          color: $blue-light
+          text-decoration: none
   &.portfolio-demo
-    background-color: #FFFFFF
+    background-color: $portfolio-background-color
     .h1-site,
     .h2-site,
     p
@@ -36,13 +54,12 @@ body
 
 
   nav
-    //background-color: $blue-light
+    background-color: $blue-dark
     a
       &.navbar-brand
-        color: $blue-dark
+        color: $blue-light!important
         font-family: $fancy-font
     .nav-link
-
       font-family: $normal-font
       font-weight: 300
 
@@ -118,10 +135,10 @@ body
 
   .portfolio-item
     padding: 30px 0
-
+    color: $portfolio-font-color
     a
       padding-left: 0
-      color: $blue-light
+      color: $portfolio-font-color
       font-family: $normal-font
       font-weight: 300
       font-size: .8rem
