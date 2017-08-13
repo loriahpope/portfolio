@@ -3,6 +3,7 @@
 
 $blue-dark: #275268
 $blue-light: #e8f2f2
+$accent-color: #A45038
 $fancy-font: 'Megrim', cursive
 $normal-font: 'Open Sans', sans-serif
 
@@ -18,6 +19,10 @@ $portfolio-font-color: #333333
 
 body
   background-color: $home-background-color
+  strong
+    font-weight: 700
+    &.project-emphasize
+      color: $accent-color
   &.portfolio-main
     background-color: $portfolio-background-color
     .h1-site,

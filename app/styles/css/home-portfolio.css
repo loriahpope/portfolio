@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
 body {
   background-color: #275268; }
+  body strong {
+    font-weight: 700; }
+    body strong.project-emphasize {
+      color: #A45038; }
   body.portfolio-main {
     background-color: #ffffff; }
     body.portfolio-main .h1-site,
