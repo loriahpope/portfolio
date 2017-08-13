@@ -3,6 +3,7 @@
 
 $blue-dark: #275268
 $blue-light: #e8f2f2
+$accent-color: #A45038
 $fancy-font: 'Megrim', cursive
 $normal-font: 'Open Sans', sans-serif
 
@@ -22,6 +23,10 @@ body
   .nda-text
       color: $muted-text-color!important
       font-style: italic
+  strong
+    font-weight: 700
+    &.project-emphasize
+      color: $accent-color
   &.portfolio-main
     background-color: $portfolio-background-color
     .h1-site,

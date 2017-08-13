@@ -5,6 +5,10 @@ body {
   body .nda-text {
     color: #999999 !important;
     font-style: italic; }
+  body strong {
+    font-weight: 700; }
+    body strong.project-emphasize {
+      color: #A45038; }
   body.portfolio-main {
     background-color: #ffffff; }
     body.portfolio-main .h1-site,
