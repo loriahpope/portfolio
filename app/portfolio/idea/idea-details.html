@@ -21,10 +21,16 @@
 <div class="container-fluid" style="margin: 54px;">
     <h1 class="h1-details">Idea Submission Site</h1>
     <p class="subtitle-details">
-        [Description]
+        The Idea Portal currently exists as a platform for employees to submit innovative solutions that will improve the operations of the company. A similar idea submission platform exists on the company's internal social networking site, where employees identify potential areas within the company that can be improved. Ideally, the crowdsourcing, social aspect of the internal social networking solution can be combined with the structure and process definition within the existing Idea Portal to create an ideal user experience.
     </p>
     <p class="subtitle-details">
         I was the lead designer on this project. In addition to completing a heuristic review of the existing portal, I interviewed many users of the current site to understand their pain points and difficulties in preperation for designing the new system.
+    </p>
+    <p class="subtitle-details">
+        <strong>Process:</strong>
+    </p>
+    <p class="subtitle-details">
+        Following the initial requirements gathering meeting and a heuristic review of the existing Portal, the User Experience Team will meet with the core idea/development team on a weekly basis throughout the month of May for process clarification, prototype review, and for declaring next steps. In addition to weekly team meetings, the User Experience Team will meet with stakeholders to empathize with their use of the current system, and incorporate their experiences into the new design.
     </p>
     <p class="subtitle-details nda-text">
         Due to my non-disclosure agreement, I will not be sharing actual screenshots of the site as it was. Rather, all opinions and words are my own, and all prototypes are my own based on the original.
@@ -182,6 +188,7 @@
         <p class="col-12 details-text">
             Below is a compiled list of notes, quotes, and general findings from the user interviews:
         </p>
+
         <p class="col-12 details-text">
             <strong>Notes</strong>
         </p>
@@ -204,8 +211,295 @@
             <li>
                 Review current usage of the portal - initially people were submitting lots of ideas, but as teh portal grew, approvers couldn't support the influx of ideas, resulting in user frustration.
             </li>
+            <li>
+                One LOB has designed their own tool - a simple spreadsheet for tracking ideas specific to their own business. They are less focused on the use of the portal for their own company, and more focused on day to day innovation to improve quality of work and making employees more effective workers.
+                <ul class="details-text">
+                    <li>
+                        Spreadsheet provides immediate status and clear ownership - ideas are prioritized based on impact and taken into account at employee's year end review
+                    </li>
+                    <li>
+                        Employees are encouraged to think about what they could do to improve their lives on a daily basis, and submit those as ideas. Not all of them are globally impactful, but the fact that ideas are being submitter starts a snowball effect - more confidence in submitting ideas - encourage others
+                    </li>
+                    <li>
+                        Redesigned system is separated by years, ideas submitted are focused on the day to day difference
+                    </li>
+                    <li>
+                        Simple fields - highlighting current workload vs new workload
+                    </li>
+                    <li>
+                        Flat approval process, ideas move at their own pace
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Meetings are help biweekly to discuss innovation for a business
+            </li>
+            <li>
+                User suggestion: The current application is cumbersome, it would be nice to separate it out into smaller sections, perhaps by business. There is transparency in the current system, to an extent, but it is difficult to be able to clearly see what someone else on your team or LOB is already doing and what ideas are already out there.
+            </li>
+            <li>
+                User wanted summary of submissions but found it difficult to pull information of ideas that have been submitted -> couldn't easily find summary data.
+            </li>
+            <li>
+                What does 'approved' mean once an idea is 'approved for idea development'? "There is no point in having movement of idea if no one owns it?"
+            </li>
+        </ul>
+        <p class="col-12 details-text">
+            <strong>Wishes</strong>
+        </p>
+        <ul class="details-text">
+            <li>
+                  Make primary/secondary business selection easier to point the submitter in the right direction
+            </li>
+            <li>
+                Improve UI
+            </li>
+            <li>
+                Integrate into other systems
+            </li>
+            <li>
+                Transparency into Innovation Centers
+            </li>
+        </ul>
+        <p class="col-12 details-text">
+            <strong>Common Findings</strong>
+        </p>
+        <ul class="details-text">
+            <li>
+                Recognition/Incentives for employees to submit ideas
+            </li>
+            <li>
+                JAMs are not typically used as suggested by the portal. Many LOBs schedule their own in-person brainstorming/whiteboarding sessions.
+            </li>
+            <li>
+                Confusion between Campaign/JAM
+            </li>
+            <li>
+                Integration with other systems
+            </li>
+            <li>
+                Help the user during the submission process
+                <ul class="details-text">
+                    <li>
+                        Make it clear what primary/secondary Line of Business is
+                        <ul class="details-text">
+                            <li>
+                                If LOB is selected incorrectly, it may not be looked at by anyone
+                            </li>
+                            <li>
+                                User Suggestion: Send ideas to a common bucket, not a specific LOB Owner
+                            </li>
+                            <li>
+                                No option to reassign/change LOB after rejected due to submission to incorrect LOB
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Make the process transparent - what stage the idea is in, what the next step is, etc.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Users often get frustrated after they submit ideas, as they do not know what happens to them once they are submitted
+            </li>
+            <li>
+                The multiple-level approval is confusing - preferred would be a flat approval process
+            </li>
+            <li>
+                Found system difficult to use for idea submissions
+            </li>
+            <li>
+                Lots of emails from the portal about ideas that require no action
+            </li>
+            <li>
+                Almost every idea received requires offline interaction = less transparency
+            </li>
+            <li>
+                Track ideas in Excel
+            </li>
+            <li>
+                People may not submit ideas because they think it may have to be a big idea
+            </li>
+            <li>
+                After the annual idea competition ends, many ideas are "orphaned" - no clear owner with clear responsibility
+            </li>
+            <li>
+                Many ideas in the past are related to campaigns
+            </li>
         </ul>
 
+        <h3 class="h3-details col-12">Defining User Personas</h3>
+        <p class="col-12 details-text">
+            Through user interviews, we identified five primary personas:
+        </p>
+        <!-- Submitter -->
+        <div class="col-12">
+            <p class="col-12 details-text">
+                <strong>1| Submitter</strong>
+            </p>
+            <p class="col-12 details-text">Primary Tasks</p>
+            <ul class="details-text">
+                <li>Ability to view submitted ideas in the Idea Review stage</li>
+                <li>Ability to comment on ideas</li>
+                <li>Ability to upvote/downvote ideas</li>
+                <li>ability to submit ideas</li>
+            </ul>
+            <p class="col-12 details-text">Level of Confidence with Portal: Low</p>
+            <ul class="details-text">
+                <li>
+                    Will need FAQs, access to LOB information to understand where to submit their ideas, access to information to understand differentiation between types of idea submission forms
+                </li>
+            </ul>
+        </div>
+        <!-- End Submitter -->
+
+        <!-- Business Reviewer -->
+        <div class="col-12">
+            <p class="col-12 details-text">
+                <strong>2| Business Reviewer</strong>
+            </p>
+            <p class="col-12 details-text">Primary Tasks</p>
+            <ul class="details-text">
+                <li>Ability to review submitted ideas</li>
+                <li>Ability to comment on, approve, and reject ideas</li>
+            </ul>
+            <p class="col-12 details-text">Secondary Tasks</p>
+            <ul class="details-text">
+                <li>All tasks of Submitter persona</li>
+            </ul>
+            <p class="col-12 details-text">Level of Confidence with Portal: Low</p>
+            <ul class="details-text">
+                <li>
+                    User may not know how to review an idea
+                </li>
+            </ul>
+        </div>
+        <!-- End Business Reviewer -->
+
+        <!-- General Admin -->
+        <div class="col-12">
+            <p class="col-12 details-text">
+                <strong>3| General Admin</strong>
+            </p>
+            <p class="col-12 details-text">Primary Tasks</p>
+            <ul class="details-text">
+                <li>Ability to configure email messages</li>
+            </ul>
+            <p class="col-12 details-text">Secondary Tasks</p>
+            <ul class="details-text">
+                <li>All tasks of Submitter persona</li>
+                <li>All tasks of Business Reviewer persona</li>
+            </ul>
+            <p class="col-12 details-text">Level of Confidence with Portal: Medium</p>
+            <ul class="details-text">
+                <li>
+                    Access is delegated by Innovation Champion
+                </li>
+            </ul>
+        </div>
+        <!-- End General Admin -->
+
+        <!-- Innovation Champion -->
+        <div class="col-12">
+            <p class="col-12 details-text">
+                <strong>4| Innovation Champion</strong>
+            </p>
+            <p class="col-12 details-text">Primary Tasks</p>
+            <ul class="details-text">
+                <li>Ability to configure email messages</li>
+                <li>Ability to manage user access</li>
+            </ul>
+            <p class="col-12 details-text">Secondary Tasks</p>
+            <ul class="details-text">
+                <li>All tasks of Submitter persona</li>
+                <li>All tasks of Business Reviewer persona</li>
+                <li>All tasks of General Admin persona</li>
+            </ul>
+            <p class="col-12 details-text">Level of Confidence with Portal: High</p>
+            <ul class="details-text">
+                <li>
+                    Access is delegated by Overall Admin
+                </li>
+            </ul>
+        </div>
+        <!-- End Innovation Champion -->
+
+        <!-- Overall Admin -->
+        <div class="col-12">
+            <p class="col-12 details-text">
+                <strong>5| Overall Admin</strong>
+            </p>
+            <p class="col-12 details-text">Primary Tasks</p>
+            <ul class="details-text">
+                <li>Ability to maintain and configure site</li>
+                <li>Ability to configure email messages</li>
+                <li>Ability to manage user access</li>
+            </ul>
+            <p class="col-12 details-text">Secondary Tasks</p>
+            <ul class="details-text">
+                <li>All tasks of other users</li>
+            </ul>
+            <p class="col-12 details-text">Level of Confidence with Portal: Expert</p>
+            <ul class="details-text">
+                <li>
+                    Represents "Super User" Persona
+                </li>
+            </ul>
+        </div>
+        <!-- End Overall Admin -->
+
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+        <h2 class="h2-details col-12">3| Define the Problem </h2>
+        <p class="col-12 details-text">
+            After defining the user personas, the problem statements can be defined as follows:
+        </p>
+        <div class="col-12">
+            <ol class="details-text">
+                <li>
+                    <p>
+                        <strong>Submitters</strong> want to ...
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Business Reviewers</strong> want to ...
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>General Admins</strong> want to ...
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Innovation Champions</strong> want to ...
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Overall Admins</strong> want to ...
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div class="row" style="padding-top: 20px;">
+        <h2 class="h2-details col-12">4| Prototyping & User Feedback </h2>
+        <p class="col-12 details-text">
+            High-fidelity prototype to come.
+        </p>
+        <div class="col-12">
+            <h3 class="h3-details">Some feedback:</h3>
+            <ul class="details-text">
+                <li>
+                    TBD
+                </li>
+            </ul>
+        </div>
     </div>
 
 </div>
