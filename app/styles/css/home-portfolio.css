@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
 body {
   background-color: #275268; }
+  body .nda-text {
+    color: #999999 !important;
+    font-style: italic; }
   body.portfolio-main {
     background-color: #ffffff; }
     body.portfolio-main .h1-site,
