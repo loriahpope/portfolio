@@ -19,14 +19,28 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
-    <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
-        <!--<span class="navbar-toggler-icon"></span>-->
-    <!--</button>-->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <a class="navbar-brand" href="../index.html">LP</a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
             <li class="nav-item active">
-                <a class="nav-link text-right" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="portfolio-main.html">Portfolio <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="help/help-details.html">Employee Help Screen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="idea/idea-details.html">Employee Idea Site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icons/icon-details.html">Material Design Icons</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>
@@ -38,11 +52,11 @@
         <h1 class="h1-site">Portfolio</h1>
     </div>
     <div class="row">
-        <p class="project-description">
+        <p class="project-description" style="color: #999999; font-size: .8rem">
             This portfolio was designed and built myself as a display of original works using basic HTML, and Sass, along with Bootstrap 4. Many of the examples also utilize AngularJS to control the demo views.
         </p>
     </div>
-    <div class="row">
+    <div class="row" style="padding: 20px 0;">
         <p class="col-12 project-description">
             <strong>Design Process</strong>
         </p>
@@ -50,36 +64,15 @@
             My design process attempts to combine the principles of Design Thinking with a respect of and understanding for the development process. Typically, when a design request is received, I will attempt to understand as much as possible about what the function of the site or page will be. If there is an existing page or portal, I will complete a Heuristic Evaluation, as well as interview current users of the system. If not, I will interview potential users, as well as team members of the business making the request in an effort to <strong  class="project-emphasize">Empathize with the User</strong>. This step also involves conducting user interviews and understanding user feedback to define personas. Next, I will <strong class="project-emphasize">Define the Problem Statement</strong> in terms of the defined users, which then helps in <strong class="project-emphasize">Ideating Possible Solutions</strong>. I will then work on low-fidelity <strong class="project-emphasize">Prototyping</strong> in order to facilitate quick <strong class="project-emphasize">User Testing</strong>. I will then <strong class="project-emphasize">Build a High-Fidelity Prototype</strong> utilizing <strong class="project-emphasize">HTML, CSS, and JavaScript</strong>.
         </p>
     </div>
-    <div class="row portfolio-item">
-        <h2 class="h2-site col-12">Employee Help Screen</h2>
-        <p class="project-description col-12">
-            This screen is part of the Employee Intranet experience. It provides a simple way for employees to find answers to technical questions to provide for a more productive and efficient workday.
-        </p>
-        <a class="col-6" href="help/help-details.html" target="_blank" onclick="ga('send', 'event', 'portfolio-link', 'Help Details')"><strong class="project-emphasize">View Details</strong></a>
-        <a class="col-6" href="help/help-demo.html" target="_blank" onclick="ga('send', 'event', 'portfolio-link', 'Help Demo')"><strong class="project-emphasize">View Demo</strong></a>
+
+
+    <div class="row">
+        <div id="help" class="col-12 col-sm-6 text-center portfolio-img" onclick="location.href='help/help-details.html';ga('send', 'event', 'portfolio-link', 'Help Details');"></div>
+        <div id="idea" class="col-12 col-sm-6 text-center portfolio-img" onclick="location.href='idea/idea-details.html';ga('send', 'event', 'portfolio-link', 'MyIdea Details');"></div>
+        <div id="icons" class="col-12 col-sm-6 text-center portfolio-img" onclick="location.href='icons/icon-details.html';ga('send', 'event', 'portfolio-link', 'Icons');"></div>
     </div>
 
-    <div class="row portfolio-item">
-        <h2 class="h2-site col-12">Employee Idea Site</h2>
-        <p class="project-description col-12">
-            The Idea Portal currently exists as a platform for employees to submit innovative solutions that will improve the operations of the company.
-        </p>
-        <a class="col-6" href="idea/idea-details.html" target="_blank" onclick="ga('send', 'event', 'portfolio-link', 'MyIdea Details')"><strong class="project-emphasize">View Details</strong></a>
-    </div>
-    <!--<div class="row portfolio-item">-->
-        <!--<h2 class="h2-site col-12">Component Contract Example</h2>-->
-        <!--<p class="project-description col-12">-->
-            <!--This was part of larger effort to define common component contracts in consideration for how a user would utilize a slider component.-->
-        <!--</p>-->
-        <!--<a class="col-6" href="componentContract/component-details.html" target="_blank">View Details</a>-->
-    <!--</div>-->
-    <div class="row portfolio-item">
-        <h2 class="h2-site col-12">Material Icons</h2>
-        <p class="project-description col-12">
-            Practice creating icons in Adobe Illustrator.
-        </p>
-        <a class="col-6" href="icons/icon-details.html" target="_blank" onclick="ga('send', 'event', 'portfolio-link', 'Icons')"><strong class="project-emphasize">View Details</strong></a>
-    </div>
+    <!--Placeholder for mobile spacing-->
     <div class="row portfolio-item">
 
     </div>

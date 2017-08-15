@@ -18,7 +18,37 @@
 </head>
 <body class="portfolio-demo" ng-app="IconDemo">
 
-<div class="container-fluid" style="margin: 54px;" ng-controller="IconDemoController">
+<!-- Navbar -->
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="../../index.html">LP</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../portfolio-main.html">Portfolio <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../help/help-details.html">Employee Help Screen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../idea/idea-details.html">Employee Idea Site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icon-details.html">Material Design Icons</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<div class="container-fluid" style="margin: 108px 54px 54px;" ng-controller="IconDemoController">
     <div class="row">
         <h1 class="h1-details">Material Icon Practice</h1>
         <p class="subtitle-details">

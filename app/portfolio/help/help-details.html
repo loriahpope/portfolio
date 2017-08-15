@@ -18,7 +18,37 @@
 </head>
 <body class="portfolio-demo">
 
-<div class="container-fluid" style="margin: 54px;">
+<!-- Navbar -->
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="../../index.html">LP</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../portfolio-main.html">Portfolio</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="help-details.html">Employee Help Screen <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../idea/idea-details.html">Employee Idea Site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../icons/icon-details.html">Material Design Icons</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<div class="container-fluid" style="margin: 108px 0 54px 0;">
     <h1 class="h1-details">Employee Help Page</h1>
     <p class="subtitle-details">
         The Employee Help page is a portion of an enterprise intranet. The purpose is to provide a hub for employees to not only contact the Customer Service Desk to find answers to their tech problems, but for the Help Desk to provide a means of engaging with employees as well. This is intended to be a Desktop application, however it is built to be responsive with consideration given to primary interactions on mobile devices as well.
@@ -151,7 +181,6 @@
         </p>
         <div class="col-12">
             <a class="btn btn-primary portfolio-button" href="help-demo.html" role="button" onclick="ga('send', 'event', 'portfolio-demo', 'Help Demo')" >View Live Demo</a>
-            <a class="btn btn-outline-primary portfolio-button" href="../portfolio-main.html" role="button" onclick="ga('send', 'event', 'portfolio-home', 'Back to Portfolio')" >Back to Portfolio</a>
         </div>
     </div>
 </div>
