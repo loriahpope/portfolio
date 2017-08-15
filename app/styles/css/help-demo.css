@@ -5,20 +5,20 @@ body {
   body .nav-demo {
     background-color: #f2f2f2;
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 300 !important;
     font-size: 14px; }
   body .h1-demo {
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 900;
+    font-weight: 900 !important;
     font-size: 24px;
     padding: 20px; }
   body .h2-demo {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 900 !important;
     padding: 15px 0; }
   body .h3-demo {
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 900 !important;
     margin: 15px 0; }
   body .input-demo {
     font-size: 12px;
@@ -31,7 +31,7 @@ body {
       color: #e8f2f2; }
   body .question-title {
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 900 !important;
     padding-top: 10px; }
   body .demo-text {
     font-size: 14px; }

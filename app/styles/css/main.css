@@ -10,7 +10,7 @@ body {
     color: #999999 !important;
     font-style: italic; }
   body strong {
-    font-weight: 700; }
+    font-weight: 700 !important; }
     body strong.project-emphasize {
       color: #A45038; }
   body.portfolio-main {
@@ -35,7 +35,7 @@ body {
       color: #333333; }
   body .portfolio-demo-button {
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 300 !important; }
     body .portfolio-demo-button.btn-outline-primary {
       background-color: #275268;
       color: #e8f2f2;
@@ -50,7 +50,7 @@ body {
       font-family: "Megrim", cursive; }
     body nav .nav-link {
       font-family: "Open Sans", sans-serif;
-      font-weight: 300; }
+      font-weight: 300 !important; }
   body .footer {
     position: fixed;
     bottom: 0;
@@ -93,14 +93,14 @@ body {
     font-family: "Open Sans", sans-serif; }
   body .h2-homepage {
     font-size: 3vmin;
-    font-weight: 600;
+    font-weight: 600 !important;
     padding: 20px 0; }
   body .h3-homepage {
     font-size: 2vmin;
-    font-weight: 300; }
+    font-weight: 300 !important; }
   body #portfolio-button {
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 300 !important; }
     body #portfolio-button.btn-outline-primary {
       color: #e8f2f2;
       border-color: #e8f2f2; }
@@ -114,7 +114,7 @@ body {
       padding-left: 0;
       color: #333333;
       font-family: "Open Sans", sans-serif;
-      font-weight: 300;
+      font-weight: 300 !important;
       font-size: .8rem; }
       body .portfolio-item a:hover {
         text-decoration: underline; }
@@ -122,14 +122,14 @@ body {
   body .h2-site {
     color: #e8f2f2;
     font-family: "Open Sans", sans-serif;
-    font-weight: 600; }
+    font-weight: 600 !important; }
   body .h2-site {
     font-size: 1.5rem;
     padding-left: 0; }
   body p {
     color: #e8f2f2;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 300 !important; }
     body p.project-description {
       font-size: .8rem;
       padding-left: 0; }
@@ -140,21 +140,21 @@ body {
   body .h1-details {
     font-size: 36px;
     margin: 30px 0;
-    font-weight: 700; }
+    font-weight: 700 !important; }
   body .h2-details {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700 !important;
     margin: 30px 0; }
   body .h3-details {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 700 !important;
     margin: 15px 0; }
   body .subtitle-details {
-    font-weight: 300;
+    font-weight: 300 !important;
     font-size: 14px; }
   body .portfolio-button {
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 300 !important; }
     body .portfolio-button.btn-primary {
       background-color: #275268;
       color: #e8f2f2;
@@ -177,20 +177,20 @@ body {
   body .nav-demo {
     background-color: #f2f2f2;
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 300 !important;
     font-size: 14px; }
   body .h1-demo {
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 900;
+    font-weight: 900 !important;
     font-size: 24px;
     padding: 20px; }
   body .h2-demo {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 900 !important;
     padding: 15px 0; }
   body .h3-demo {
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 900 !important;
     margin: 15px 0; }
   body .input-demo {
     font-size: 12px;
@@ -203,7 +203,7 @@ body {
       color: #e8f2f2; }
   body .question-title {
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 900 !important;
     padding-top: 10px; }
   body .demo-text {
     font-size: 14px; }
@@ -223,17 +223,17 @@ body {
   body .h1-details {
     font-size: 36px;
     margin: 30px 0;
-    font-weight: 700; }
+    font-weight: 700 !important; }
   body .h2-details {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700 !important;
     margin: 30px 0; }
   body .h3-details {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 700 !important;
     margin: 15px 0; }
   body .subtitle-details {
-    font-weight: 300;
+    font-weight: 300 !important;
     font-size: 14px; }
   body .details-text {
     font-size: 14px; }
