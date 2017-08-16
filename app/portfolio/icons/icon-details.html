@@ -11,7 +11,7 @@
     <!--build:css ../../css/styles.min.css-->
     <link rel="stylesheet" href="../../scripts/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../scripts/lib/components-font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../styles/css/icon-details.css">
+    <link rel="stylesheet" href="../../styles/css/main.css">
     <!--endbuild-->
 
 
@@ -19,47 +19,38 @@
 <body class="portfolio-demo" ng-app="IconDemo">
 
 <!-- Navbar -->
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="../../index.html">LP</a>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="../../index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="../portfolio-main.html">Portfolio <span class="sr-only">(current)</span></a>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../help/help-details.html">Employee Help Screen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../idea/idea-details.html">Employee Idea Site</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="icon-details.html">Material Design Icons</a>
-                    </li>
-                </ul>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Work
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../portfolio-main.html" onclick="ga('send', 'event', 'navbar', 'Portfolio Main')">Portfolio</a>
+                    <a class="dropdown-item" href="../help/help-details.html" onclick="ga('send', 'event', 'navbar', 'Employee Help Page')">Employee Help Page</a>
+                    <a class="dropdown-item" href="../idea/idea-details.html" onclick="ga('send', 'event', 'navbar', 'Employee Idea Site')">Employee Idea Site</a>
+                    <a class="dropdown-item active" href="../icons/icon-details.html"onclick="ga('send', 'event', 'navbar', 'Material Design Icons')">Material Design Icons <span class="sr-only">(current)</span></a>
+                </div>
             </li>
         </ul>
     </div>
 </nav>
 <!-- End Navbar -->
 
-<div class="container-fluid" style="margin: 108px 54px 54px;" ng-controller="IconDemoController">
+<div class="container-fluid" style="margin: 108px 0 54px 0;" ng-controller="IconDemoController">
     <div class="row">
-        <h1 class="h1-details">Material Icon Practice</h1>
-        <p class="subtitle-details">
+        <h1 class="col-12 h1-details">Material Icon Practice</h1>
+        <p class="col-12 subtitle-details">
             In an effort to learn more about Adobe Illustrator, I practiced creating icons in the Material style.
         </p>
     </div>
-    <div class="row header-img">
-        <h1 class="h1-details">Material Icon Practice</h1>
-    </div>
     <div class="row">
-        <h2 class="h2-details">Icons</h2>
+        <h2 class="col-12 h2-details">Icons</h2>
     </div>
     <div class="row">
         <div class="col-12 col-sm-6 col-md-3 text-center" ng-repeat="icon in iconItems">
