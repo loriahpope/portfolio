@@ -184,6 +184,10 @@ body {
     body .portfolio-img#icons:before {
       background: url("../../images/material-icons/all_icons.png") no-repeat 50% 60%;
       background-size: contain; }
+  body .portfolio-link {
+    color: #275268; }
+    body .portfolio-link:active, body .portfolio-link:visited {
+      color: #275268; }
 
 body {
   font-family: "Open Sans", sans-serif;
