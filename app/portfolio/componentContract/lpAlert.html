@@ -1,0 +1,12 @@
+<div ng-show="type == 'success'" class="col-12 alert alert-success" role="alert">
+    <strong><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="alert-message">Success!</span></strong> <ng-transclude></ng-transclude>
+</div>
+<div ng-show="type == 'info'" class="col-12 alert alert-info" role="alert">
+    <strong><i class="fa fa-question-circle" aria-hidden="true"></i> <span class="alert-message">Info!</span></strong> <ng-transclude></ng-transclude>
+</div>
+<div ng-show="type == 'warning'" class="col-12 alert alert-warning" role="alert">
+    <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <span class="alert-message">Warning!</span></strong> <ng-transclude></ng-transclude>
+</div>
+<div ng-show="type == 'danger'" class="col-12 alert alert-danger" role="alert">
+    <strong><i class="fa fa-times-circle" aria-hidden="true"></i> <span class="alert-message">Danger!</span></strong> <ng-transclude></ng-transclude>
+</div>

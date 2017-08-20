@@ -1,3 +1,4 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Megrim");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
@@ -265,6 +266,43 @@ body {
     body #help-details.portfolio-img#help-details:before {
       background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%;
       background-size: 100%; }
+  body .code-block {
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-bottom: 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    white-space: pre;
+    font-size: 12px; }
+  body lp-alert {
+    width: 100%; }
+    body lp-alert .alert {
+      border-radius: 0;
+      box-shadow: -1px 1px 0px #cccccc; }
+    body lp-alert .alert-info {
+      color: #000000 !important;
+      background-color: #56c8d8 !important; }
+      body lp-alert .alert-info .alert-message,
+      body lp-alert .alert-info i {
+        color: #006978 !important; }
+    body lp-alert .alert-success {
+      color: #000000 !important;
+      background-color: #6abf69 !important; }
+      body lp-alert .alert-success .alert-message,
+      body lp-alert .alert-success i {
+        color: #00600f; }
+    body lp-alert .alert-warning {
+      color: #000000 !important;
+      background-color: #fff263 !important; }
+      body lp-alert .alert-warning .alert-message,
+      body lp-alert .alert-warning i {
+        color: #c49000 !important; }
+    body lp-alert .alert-danger {
+      color: #000000 !important;
+      background-color: #ff6659 !important; }
+      body lp-alert .alert-danger .alert-message,
+      body lp-alert .alert-danger i {
+        color: #9a0007 !important; }
 
 body {
   font-family: "Open Sans", sans-serif;

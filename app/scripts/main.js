@@ -209,8 +209,7 @@ var HelpDemo = angular.module('HelpDemo', []);
 }]);
 
 var IconDemo = angular.module('IconDemo', []);
-
-IconDemo.controller('IconDemoController', ['$scope', function ($scope) {
+    IconDemo.controller('IconDemoController', ['$scope', function ($scope) {
 
     $scope.iconItems= [
         {
@@ -258,8 +257,7 @@ IconDemo.controller('IconDemoController', ['$scope', function ($scope) {
     ];
 
 }]);
-
-IconDemo.directive('iconDemoModal', [function() {
+    IconDemo.directive('iconDemoModal', [function() {
     return {
         restrict: 'E',
         scope: {
@@ -271,3 +269,18 @@ IconDemo.directive('iconDemoModal', [function() {
         templateUrl: 'icon-demo-modal.html'
     }
 }]);
+
+var ComponentsDemo = angular.module('ComponentsDemo', []);
+    ComponentsDemo.controller('ComponentsDemoController', ['$scope', function ($scope) {
+
+    }]);
+    ComponentsDemo.directive('lpAlert', [function() {
+        return {
+            restrict: 'E',
+            transclude: true,
+            scope: {
+                type: '@'
+            },
+            templateUrl: 'lpAlert.html'
+        }
+    }]);

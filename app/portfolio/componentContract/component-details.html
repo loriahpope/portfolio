@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Employee Help</title>
+    <title>Reusable UI Components</title>
 
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Megrim|Open+Sans" rel="stylesheet">
@@ -16,36 +16,121 @@
 
 
 </head>
-<body class="portfolio-demo">
+<body class="portfolio-demo" ng-app="ComponentsDemo">
 
-<div class="container-fluid" style="margin: 54px;">
-    <h1 class="h1-details">Building a Common Component with a Wrapper</h1>
-    <p class="subtitle-details">
-        This strategy and guideline was designed as part of a larger effort to design and develop reusable common components for a large company, with thousands of developers looking to utilize the component.
-    </p>
-    <p class="subtitle-details">
-        <strong>My Role:</strong> I was the developer on this effort. I collaborated with the Lead Interaction Designer and Lead Visual Designer on this component to quantify UX Component Requirements into Software Requirements.
-    </p>
+<!-- Navbar -->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="../../index.html">LP</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Work
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../portfolio-main.html" onclick="ga('send', 'event', 'navbar', 'Portfolio Main')">Portfolio</a>
+                    <a class="dropdown-item" href="../help/help-details.html" onclick="ga('send', 'event', 'navbar', 'Employee Help Page')">Employee Help Page</a>
+                    <a class="dropdown-item" href="../idea/idea-details.html" onclick="ga('send', 'event', 'navbar', 'Employee Idea Site')">Employee Idea Site</a>
+                    <a class="dropdown-item" href="../icons/icon-details.html" onclick="ga('send', 'event', 'navbar', 'Material Design Icons')">Material Design Icons</a>
+                    <a class="dropdown-item active" href="component-details.html" onclick="ga('send', 'event', 'navbar', 'Component Details')">Reusable UI Components <span class="sr-only">(current)</span></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End Navbar -->
 
+<div class="container" style="margin: 108px auto;" ng-controller="ComponentsDemoController">
+    <h1 class="h1-details">Reusable UI Components</h1>
+    <!--<p class="subtitle-details">-->
+        <!--One of the more interesting projects I've worked on -->
+    <!--</p>-->
+
+    <div class="row" style="padding-top: 20px;">
+        <p class="col-12 details-text">
+            From day to day, as an Interaction Designer we typically focus only on the end user's experience. Can users understand the intended flow? Are they able to clearly find what they're looking for? In my experience, designers will typically work with developers to ensure the prototype is achievable from a technical perspective, but when building a platform, there is actually more than one end user.
+        </p>
+        <p class="col-12 details-text">
+            One of the more interesting projects I've been working on lately is the idea of enhancing the developer experience. When building a platform at a large corporation, there are thousands of developers building and maintaining applications, and for a large financial institution, you can't afford for the site to go down or load slowly due to inconsistent code.
+        </p>
+    </div>
+    <div class="row" style="padding-top: 20px;">
+        <p class="col-12 details-text">
+            The goal of building reusable UI components is to blah blah blah extending Bootstrap blah blah blah we can go from this:
+        </p>
+    </div>
     <div class="row">
-        <div class="col-12">
-            <h2 class="h2-details">Evaluating UX Requirements</h2>
-            <p class="details-text">To build a common component, there must be an understanding of the expected user interaction. The designer on the project must consider potential features of the component that will be beneficial to the largest audience. Keep in mind that the component should be developed to allow for future enhancements.</p>
+        <div class=" col-12 alert alert-success" role="alert">
+            <strong>Well done!</strong> You successfully read this important alert message.
         </div>
     </div>
-
     <div class="row">
-        <div class="col-12">
-            <h2 class="h2-details">Evaluating Third-Party Libraries</h2>
-            <p class="details-text">While not all components will be based on third-party libraries, it is important to consider a few factors in your third-party library:</p>
-            <p class="details-text text-muted"><strong>Note:</strong> These requirements were created by and communicated from Lead Developers within the Company, and are not my own.</p>
-            <ul>
-                <li>Footprint</li>
-                <li>Footprint</li>
-            </ul>
+        <div class="col-12 alert alert-info" role="alert">
+            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-12 alert alert-warning" role="alert">
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 alert alert-danger" role="alert">
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+    </div>
+    <div class="row">
+        <p class="col-12 details-text">
+            With code that looks something like this:
+        </p>
+        <div class="col-12">
+            <pre class="code-block">
+&lt;div class="row"&gt;
+    &lt;div class="alert alert-success" role="alert"&gt;
+        &lt;strong&gt;Well done!&lt;/strong&gt; You successfully read this important alert message.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="alert alert-info" role="alert"&gt;
+        &lt;strong&gt;Heads up!&lt;/strong&gt; This alert needs your attention, but it's not super important.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="alert alert-warning" role="alert"&gt;
+        &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're not looking too good.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="alert alert-danger" role="alert"&gt;
+        &lt;strong&gt;Oh snap!&lt;/strong&gt; Change a few things up and try submitting again.
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+        </div>
+        <p class="col-12 details-text">
+            Something about sexy markup here and the idea of BEM and naming conventions so code is easier to follow.
+        </p>
+    </div>
+    <div class="row">
+        <p class="col-12 details-text">
+            Which leaves us with this:
+        </p>
+    </div>
+    <div class="row">
+        <lp-alert type="info">This is some info</lp-alert>
+    </div>
+    <div class="row">
+        <lp-alert type="success">This is some success</lp-alert>
+    </div>
+    <div class="row">
+        <lp-alert type="warning">This is some warning</lp-alert>
+    </div>
+    <div class="row">
+        <lp-alert type="danger">This is some danger</lp-alert>
+    </div>
 </div>
 
 
