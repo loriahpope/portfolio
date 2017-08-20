@@ -1,10 +1,9 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=Megrim')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800')
 
 $blue-dark: #275268
 $blue-light: #e8f2f2
+$accent-color: #A45038
 $fancy-font: 'Megrim', cursive
 $normal-font: 'Open Sans', sans-serif
 
@@ -15,18 +14,44 @@ $home-footer-background-color: $blue-light
 $home-footer-text-color: $blue-dark
 $home-h1-font: $fancy-font
 $home-font: $normal-font
+$portfolio-background-color: #ffffff
+$portfolio-font-color: #333333
+$muted-text-color: #999999
 
 body
   background-color: $home-background-color
+  .nda-text
+      color: $muted-text-color!important
+      font-style: italic
+  strong
+    font-weight: 700!important
+    &.project-emphasize
+      color: $accent-color
+  &.portfolio-main
+    background-color: $portfolio-background-color
+    .h1-site,
+    .h2-site,
+    .project-description
+      color: $portfolio-font-color
+    .footer
+      background-color: $blue-dark
+      a
+        color: $blue-light
+        font-family: $home-font
+        &:hover,
+        &:visited,
+        &:focus
+          color: $blue-light
+          text-decoration: none
   &.portfolio-demo
-    background-color: #FFFFFF
+    background-color: $portfolio-background-color
     .h1-site,
     .h2-site,
     p
       color: #333333
   .portfolio-demo-button
     font-family: $home-font
-    font-weight: 300
+    font-weight: 300!important
     &.btn-outline-primary
       background-color: $blue-dark
       color: $blue-light
@@ -38,15 +63,14 @@ body
 
 
   nav
-    //background-color: $blue-light
+    background-color: $blue-dark !important
     a
       &.navbar-brand
-        color: $blue-dark
+        color: $blue-light!important
         font-family: $fancy-font
     .nav-link
-
       font-family: $normal-font
-      font-weight: 300
+      font-weight: 300!important
 
 
 
@@ -100,16 +124,16 @@ body
 
   .h2-homepage
     font-size: 3vmin
-    font-weight: 600
+    font-weight: 600!important
     padding: 20px 0
 
   .h3-homepage
     font-size: 2vmin
-    font-weight: 300
+    font-weight: 300!important
 
   #portfolio-button
     font-family: $home-font
-    font-weight: 300
+    font-weight: 300!important
     &.btn-outline-primary
       color: $blue-light
       border-color: $blue-light
@@ -120,12 +144,12 @@ body
 
   .portfolio-item
     padding: 30px 0
-
+    color: $portfolio-font-color
     a
       padding-left: 0
-      color: $blue-light
+      color: $portfolio-font-color
       font-family: $normal-font
-      font-weight: 300
+      font-weight: 300!important
       font-size: .8rem
       &:hover
         text-decoration: underline
@@ -134,7 +158,7 @@ body
   .h2-site
     color: $home-text-color
     font-family: $home-font
-    font-weight: 600
+    font-weight: 600!important
 
   .h2-site
     font-size: 1.5rem
@@ -143,7 +167,126 @@ body
   p
     color: $home-text-color
     font-family: $home-font
-    font-weight: 300
+    font-weight: 400!important
     &.project-description
-      font-size: .8rem
+      font-size: .9rem
       padding-left: 0
+
+  #help.portfolio-img,
+  #idea.portfolio-img,
+  #icons.portfolio-img
+    min-height: 200px
+    max-height: 400px
+    position: relative
+    overflow: hidden
+    padding: 0
+    &:hover
+      cursor: pointer
+      &:before
+        opacity: 0.2
+      &:after
+        position: absolute
+        display: block
+        top: 50%
+        -webkit-transform: translateY(-50%)
+        -moz-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        transform: translateY(-50%)
+        vertical-align: -50%
+        color: $blue-dark
+        white-space: pre
+        font-family: $normal-font
+        text-align: center
+        font-size: 22px
+        padding: 20px
+      &#help:after
+        content: "Employee Help Screen"
+      &#idea:after
+        content: 'Employee Idea Site'
+      &#icons:after
+        content: 'Material Icons'
+    &:before
+      content: ''
+      text-align: center
+      display: block
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    &#help:before
+      background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%
+      background-size: 100%
+    &#idea:before
+      background: url("../../images/blanks/idea2.jpg") no-repeat 30% 55%
+      background-size: 100%
+    &#icons:before
+      background: url("../../images/blanks/icons2.jpg") no-repeat 30% 50%
+      background-size: 100%
+
+  a.portfolio-link
+    color: $blue-dark!important
+    &:active,
+    &:visited
+      color: $blue-dark!important
+
+  @media (min-width: 768px)
+    .portfolio-img
+      height: 400px
+
+  #idea-details.portfolio-img
+    min-height: 200px
+    max-height: 400px
+    position: relative
+    overflow: hidden
+    padding: 0
+    &:before
+      content: ''
+      text-align: center
+      display: block
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    &#idea-details:before
+      background: url("../../images/blanks/idea2.jpg") no-repeat 30% 40%
+      background-size: 100%
+
+  #icon-details.portfolio-img
+    min-height: 200px
+    max-height: 400px
+    position: relative
+    overflow: hidden
+    padding: 0
+    &:before
+      content: ''
+      text-align: center
+      display: block
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    &#icon-details:before
+      background: url("../../images/blanks/icons2.jpg") no-repeat 30% 40%
+      background-size: 100%
+
+  #help-details.portfolio-img
+    min-height: 200px
+    max-height: 400px
+    position: relative
+    overflow: hidden
+    padding: 0
+    &:before
+      content: ''
+      text-align: center
+      display: block
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    &#help-details:before
+      background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%
+      background-size: 100%

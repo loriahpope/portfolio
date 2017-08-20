@@ -2,15 +2,36 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800");
 body {
   background-color: #275268; }
+  body .nda-text {
+    color: #999999 !important;
+    font-style: italic; }
+  body strong {
+    font-weight: 700 !important; }
+    body strong.project-emphasize {
+      color: #A45038; }
+  body.portfolio-main {
+    background-color: #ffffff; }
+    body.portfolio-main .h1-site,
+    body.portfolio-main .h2-site,
+    body.portfolio-main .project-description {
+      color: #333333; }
+    body.portfolio-main .footer {
+      background-color: #275268; }
+      body.portfolio-main .footer a {
+        color: #e8f2f2;
+        font-family: "Open Sans", sans-serif; }
+        body.portfolio-main .footer a:hover, body.portfolio-main .footer a:visited, body.portfolio-main .footer a:focus {
+          color: #e8f2f2;
+          text-decoration: none; }
   body.portfolio-demo {
-    background-color: #FFFFFF; }
+    background-color: #ffffff; }
     body.portfolio-demo .h1-site,
     body.portfolio-demo .h2-site,
     body.portfolio-demo p {
       color: #333333; }
   body .portfolio-demo-button {
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 300 !important; }
     body .portfolio-demo-button.btn-outline-primary {
       background-color: #275268;
       color: #e8f2f2;
@@ -18,12 +39,14 @@ body {
     body .portfolio-demo-button:hover, body .portfolio-demo-button:active {
       background-color: #e8f2f2;
       color: #275268; }
-  body nav a.navbar-brand {
-    color: #275268;
-    font-family: "Megrim", cursive; }
-  body nav .nav-link {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+  body nav {
+    background-color: #275268 !important; }
+    body nav a.navbar-brand {
+      color: #e8f2f2 !important;
+      font-family: "Megrim", cursive; }
+    body nav .nav-link {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300 !important; }
   body .footer {
     position: fixed;
     bottom: 0;
@@ -66,14 +89,14 @@ body {
     font-family: "Open Sans", sans-serif; }
   body .h2-homepage {
     font-size: 3vmin;
-    font-weight: 600;
+    font-weight: 600 !important;
     padding: 20px 0; }
   body .h3-homepage {
     font-size: 2vmin;
-    font-weight: 300; }
+    font-weight: 300 !important; }
   body #portfolio-button {
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 300 !important; }
     body #portfolio-button.btn-outline-primary {
       color: #e8f2f2;
       border-color: #e8f2f2; }
@@ -81,12 +104,13 @@ body {
       background-color: #e8f2f2;
       color: #275268; }
   body .portfolio-item {
-    padding: 30px 0; }
+    padding: 30px 0;
+    color: #333333; }
     body .portfolio-item a {
       padding-left: 0;
-      color: #e8f2f2;
+      color: #333333;
       font-family: "Open Sans", sans-serif;
-      font-weight: 300;
+      font-weight: 300 !important;
       font-size: .8rem; }
       body .portfolio-item a:hover {
         text-decoration: underline; }
@@ -94,14 +118,146 @@ body {
   body .h2-site {
     color: #e8f2f2;
     font-family: "Open Sans", sans-serif;
-    font-weight: 600; }
+    font-weight: 600 !important; }
   body .h2-site {
     font-size: 1.5rem;
     padding-left: 0; }
   body p {
     color: #e8f2f2;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 400 !important; }
     body p.project-description {
-      font-size: .8rem;
+      font-size: .9rem;
       padding-left: 0; }
+  body #help.portfolio-img,
+  body #idea.portfolio-img,
+  body #icons.portfolio-img {
+    min-height: 200px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 0; }
+    body #help.portfolio-img:hover,
+    body #idea.portfolio-img:hover,
+    body #icons.portfolio-img:hover {
+      cursor: pointer; }
+      body #help.portfolio-img:hover:before,
+      body #idea.portfolio-img:hover:before,
+      body #icons.portfolio-img:hover:before {
+        opacity: 0.2; }
+      body #help.portfolio-img:hover:after,
+      body #idea.portfolio-img:hover:after,
+      body #icons.portfolio-img:hover:after {
+        position: absolute;
+        display: block;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        vertical-align: -50%;
+        color: #275268;
+        white-space: pre;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        font-size: 22px;
+        padding: 20px; }
+      body #help.portfolio-img:hover#help:after,
+      body #idea.portfolio-img:hover#help:after,
+      body #icons.portfolio-img:hover#help:after {
+        content: "Employee Help Screen"; }
+      body #help.portfolio-img:hover#idea:after,
+      body #idea.portfolio-img:hover#idea:after,
+      body #icons.portfolio-img:hover#idea:after {
+        content: 'Employee Idea Site'; }
+      body #help.portfolio-img:hover#icons:after,
+      body #idea.portfolio-img:hover#icons:after,
+      body #icons.portfolio-img:hover#icons:after {
+        content: 'Material Icons'; }
+    body #help.portfolio-img:before,
+    body #idea.portfolio-img:before,
+    body #icons.portfolio-img:before {
+      content: '';
+      text-align: center;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    body #help.portfolio-img#help:before,
+    body #idea.portfolio-img#help:before,
+    body #icons.portfolio-img#help:before {
+      background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%;
+      background-size: 100%; }
+    body #help.portfolio-img#idea:before,
+    body #idea.portfolio-img#idea:before,
+    body #icons.portfolio-img#idea:before {
+      background: url("../../images/blanks/idea2.jpg") no-repeat 30% 55%;
+      background-size: 100%; }
+    body #help.portfolio-img#icons:before,
+    body #idea.portfolio-img#icons:before,
+    body #icons.portfolio-img#icons:before {
+      background: url("../../images/blanks/icons2.jpg") no-repeat 30% 50%;
+      background-size: 100%; }
+  body a.portfolio-link {
+    color: #275268 !important; }
+    body a.portfolio-link:active, body a.portfolio-link:visited {
+      color: #275268 !important; }
+  @media (min-width: 768px) {
+    body .portfolio-img {
+      height: 400px; } }
+  body #idea-details.portfolio-img {
+    min-height: 200px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 0; }
+    body #idea-details.portfolio-img:before {
+      content: '';
+      text-align: center;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    body #idea-details.portfolio-img#idea-details:before {
+      background: url("../../images/blanks/idea2.jpg") no-repeat 30% 40%;
+      background-size: 100%; }
+  body #icon-details.portfolio-img {
+    min-height: 200px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 0; }
+    body #icon-details.portfolio-img:before {
+      content: '';
+      text-align: center;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    body #icon-details.portfolio-img#icon-details:before {
+      background: url("../../images/blanks/icons2.jpg") no-repeat 30% 40%;
+      background-size: 100%; }
+  body #help-details.portfolio-img {
+    min-height: 200px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 0; }
+    body #help-details.portfolio-img:before {
+      content: '';
+      text-align: center;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    body #help-details.portfolio-img#help-details:before {
+      background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%;
+      background-size: 100%; }

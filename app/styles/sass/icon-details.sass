@@ -25,27 +25,26 @@ body
   .subtitle-details
     font-weight: 300!important
     font-size: 14px
-    //color: $muted-text-color!important
-  .portfolio-button
-    font-family: $normal-font
-    font-weight: 300!important
-    &.btn-primary
-      background-color: $blue-dark
-      color: $blue-light
-      border-color: $blue-dark
-      &:hover,
-      &:active
-        background-color: $blue-light
-        color: $blue-dark
-    &.btn-outline-primary
-      background-color: $blue-light
-      color: $blue-dark
-      border-color: $blue-dark
-      &:hover,
-      &:active
-        background-color: $blue-dark
-        color: $blue-light
+    //color: $muted-text-color
   .details-text
     font-size: 14px
-
+  .header-img
+    height: 30vh
+    overflow: hidden
+    background: rgba(39, 82, 104, 0.7)
+    &:before
+      content: ''
+      text-align: center
+      color: black
+      display: block
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+      opacity: 0.3
+      background: url("../../images/material-icons/all_icons.png") no-repeat 50% 60%
+  .icon-img:hover
+    opacity: .6
+    cursor: pointer
 

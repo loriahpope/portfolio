@@ -1,5 +1,5 @@
-angular.module('HelpDemo', [])
-.controller('HelpDemoController', ['$scope', function ($scope) {
+var HelpDemo = angular.module('HelpDemo', []);
+    HelpDemo.controller('HelpDemoController', ['$scope', function ($scope) {
     $scope.demoTitle = 'ABC Employee Help';
     $scope.demoSearchPlaceholder = 'What do you need help with?';
     $scope.categories = [
@@ -206,4 +206,68 @@ angular.module('HelpDemo', [])
         step.completed = !step.completed;
     };
 
+}]);
+
+var IconDemo = angular.module('IconDemo', []);
+
+IconDemo.controller('IconDemoController', ['$scope', function ($scope) {
+
+    $scope.iconItems= [
+        {
+            "title": "Double Gear",
+            "imgSrc": "gear_double.png",
+            "alt": "Double Gear Icon",
+            "description": "Double Gear Icon"
+        },
+        {
+            "title": "Lightbulb",
+            "imgSrc": "lightbulb.png",
+            "alt": "Lightbulb Icon",
+            "description": "Lightbulb Icon"
+        },
+        {
+            "title": "Laptop",
+            "imgSrc": "laptop.png",
+            "alt": "Laptop Icon",
+            "description": "Laptop Icon"
+        },
+        {
+            "title": "Magnifying Glass",
+            "imgSrc": "magnifying_glass.png",
+            "alt": "Magnifying Glass Icon",
+            "description": "Magnifying Glass Icon"
+        },
+        {
+            "title": "Post-It Note",
+            "imgSrc": "post_it.png",
+            "alt": "Post-It Note Icon",
+            "description": "Post-It Note Icon"
+        },
+        {
+            "title": "Self-Portrait",
+            "imgSrc": "loriah-avatar.png",
+            "alt": "Self-Portrait Icon",
+            "description": "Self-Portrait Icon"
+        },
+        {
+            "title": "Solid Heart",
+            "imgSrc": "solid_heart.png",
+            "alt": "Solid Heart Icon",
+            "description": "Solid-Heart Icon"
+        }
+    ];
+
+}]);
+
+IconDemo.directive('iconDemoModal', [function() {
+    return {
+        restrict: 'E',
+        scope: {
+            model: '='
+        },
+        link: function(scope, elem, attrs) {
+            console.log('elem', elem);
+        },
+        templateUrl: 'icon-demo-modal.html'
+    }
 }]);

@@ -37,6 +37,11 @@ gulp.task('useref', function () {
        .pipe(gulp.dest('dist'))
 });
 
+gulp.task('htaccess', function () {
+    return gulp.src('app/portfolio/.htaccess')
+        .pipe(gulp.dest('dist/portfolio'))
+});
+
 gulp.task('images', function(){
     return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
         .pipe(cache(imagemin({
@@ -75,7 +80,7 @@ gulp.task('watch', ['browserSync', 'sass'], function () {
 });
 
 gulp.task('build', function (callback) {
-   runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'assets'], callback)
+   runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'assets', 'htaccess'], callback)
 });
 
 gulp.task('serve:dist', function (callback) {
