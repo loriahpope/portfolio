@@ -175,7 +175,8 @@ body
 
   #help.portfolio-img,
   #idea.portfolio-img,
-  #icons.portfolio-img
+  #icons.portfolio-img,
+  #time.portfolio-img
     min-height: 200px
     max-height: 400px
     position: relative
@@ -206,6 +207,8 @@ body
         content: 'Employee Idea Site'
       &#icons:after
         content: 'Material Icons'
+      &#time:after
+        content: 'Employee Vacation Request Site'
     &:before
       content: ''
       text-align: center
@@ -223,6 +226,9 @@ body
       background-size: 100%
     &#icons:before
       background: url("../../images/blanks/icons2.jpg") no-repeat 30% 50%
+      background-size: 100%
+    &#time:before
+      background: url("../../images/blanks/time2.jpg") no-repeat 30% 35%
       background-size: 100%
 
   a.portfolio-link
@@ -291,6 +297,28 @@ body
     &#help-details:before
       background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%
       background-size: 100%
+
+  #time-details.portfolio-img
+    min-height: 200px
+    max-height: 400px
+    position: relative
+    overflow: hidden
+    padding: 0
+    &:before
+      content: ''
+      text-align: center
+      display: block
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    &#time-details:before
+      background: url("../../images/blanks/time2.jpg") no-repeat 30% 35%
+      background-size: 100%
+
+
+
   .code-block
     background-color: #f2f2f2
     padding: 20px

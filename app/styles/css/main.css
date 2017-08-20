@@ -136,7 +136,8 @@ body {
       padding-left: 0; }
   body #help.portfolio-img,
   body #idea.portfolio-img,
-  body #icons.portfolio-img {
+  body #icons.portfolio-img,
+  body #time.portfolio-img {
     min-height: 200px;
     max-height: 400px;
     position: relative;
@@ -144,15 +145,18 @@ body {
     padding: 0; }
     body #help.portfolio-img:hover,
     body #idea.portfolio-img:hover,
-    body #icons.portfolio-img:hover {
+    body #icons.portfolio-img:hover,
+    body #time.portfolio-img:hover {
       cursor: pointer; }
       body #help.portfolio-img:hover:before,
       body #idea.portfolio-img:hover:before,
-      body #icons.portfolio-img:hover:before {
+      body #icons.portfolio-img:hover:before,
+      body #time.portfolio-img:hover:before {
         opacity: 0.2; }
       body #help.portfolio-img:hover:after,
       body #idea.portfolio-img:hover:after,
-      body #icons.portfolio-img:hover:after {
+      body #icons.portfolio-img:hover:after,
+      body #time.portfolio-img:hover:after {
         position: absolute;
         display: block;
         top: 50%;
@@ -169,19 +173,28 @@ body {
         padding: 20px; }
       body #help.portfolio-img:hover#help:after,
       body #idea.portfolio-img:hover#help:after,
-      body #icons.portfolio-img:hover#help:after {
+      body #icons.portfolio-img:hover#help:after,
+      body #time.portfolio-img:hover#help:after {
         content: "Employee Help Screen"; }
       body #help.portfolio-img:hover#idea:after,
       body #idea.portfolio-img:hover#idea:after,
-      body #icons.portfolio-img:hover#idea:after {
+      body #icons.portfolio-img:hover#idea:after,
+      body #time.portfolio-img:hover#idea:after {
         content: 'Employee Idea Site'; }
       body #help.portfolio-img:hover#icons:after,
       body #idea.portfolio-img:hover#icons:after,
-      body #icons.portfolio-img:hover#icons:after {
+      body #icons.portfolio-img:hover#icons:after,
+      body #time.portfolio-img:hover#icons:after {
         content: 'Material Icons'; }
+      body #help.portfolio-img:hover#time:after,
+      body #idea.portfolio-img:hover#time:after,
+      body #icons.portfolio-img:hover#time:after,
+      body #time.portfolio-img:hover#time:after {
+        content: 'Employee Vacation Request Site'; }
     body #help.portfolio-img:before,
     body #idea.portfolio-img:before,
-    body #icons.portfolio-img:before {
+    body #icons.portfolio-img:before,
+    body #time.portfolio-img:before {
       content: '';
       text-align: center;
       display: block;
@@ -192,18 +205,27 @@ body {
       z-index: 1; }
     body #help.portfolio-img#help:before,
     body #idea.portfolio-img#help:before,
-    body #icons.portfolio-img#help:before {
+    body #icons.portfolio-img#help:before,
+    body #time.portfolio-img#help:before {
       background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%;
       background-size: 100%; }
     body #help.portfolio-img#idea:before,
     body #idea.portfolio-img#idea:before,
-    body #icons.portfolio-img#idea:before {
+    body #icons.portfolio-img#idea:before,
+    body #time.portfolio-img#idea:before {
       background: url("../../images/blanks/idea2.jpg") no-repeat 30% 55%;
       background-size: 100%; }
     body #help.portfolio-img#icons:before,
     body #idea.portfolio-img#icons:before,
-    body #icons.portfolio-img#icons:before {
+    body #icons.portfolio-img#icons:before,
+    body #time.portfolio-img#icons:before {
       background: url("../../images/blanks/icons2.jpg") no-repeat 30% 50%;
+      background-size: 100%; }
+    body #help.portfolio-img#time:before,
+    body #idea.portfolio-img#time:before,
+    body #icons.portfolio-img#time:before,
+    body #time.portfolio-img#time:before {
+      background: url("../../images/blanks/time2.jpg") no-repeat 30% 35%;
       background-size: 100%; }
   body a.portfolio-link {
     color: #275268 !important; }
@@ -265,6 +287,24 @@ body {
       z-index: 1; }
     body #help-details.portfolio-img#help-details:before {
       background: url("../../images/blanks/help2.jpg") no-repeat 30% 30%;
+      background-size: 100%; }
+  body #time-details.portfolio-img {
+    min-height: 200px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 0; }
+    body #time-details.portfolio-img:before {
+      content: '';
+      text-align: center;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    body #time-details.portfolio-img#time-details:before {
+      background: url("../../images/blanks/time2.jpg") no-repeat 30% 35%;
       background-size: 100%; }
   body .code-block {
     background-color: #f2f2f2;
