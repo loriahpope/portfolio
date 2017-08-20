@@ -133,7 +133,7 @@ body {
   body #idea.portfolio-img,
   body #icons.portfolio-img {
     min-height: 200px;
-    max-height: 500px;
+    max-height: 400px;
     position: relative;
     overflow: hidden;
     padding: 0; }
@@ -206,7 +206,7 @@ body {
       color: #275268 !important; }
   @media (min-width: 768px) {
     body .portfolio-img {
-      height: 500px; } }
+      height: 400px; } }
   body #idea-details.portfolio-img {
     min-height: 200px;
     max-height: 400px;
