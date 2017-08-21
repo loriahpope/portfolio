@@ -29,6 +29,14 @@ body {
     body.portfolio-demo .h2-site,
     body.portfolio-demo p {
       color: #333333; }
+    body.portfolio-demo .footer {
+      background-color: #275268; }
+      body.portfolio-demo .footer a {
+        color: #e8f2f2;
+        font-family: "Open Sans", sans-serif; }
+        body.portfolio-demo .footer a:hover, body.portfolio-demo .footer a:visited, body.portfolio-demo .footer a:focus {
+          color: #e8f2f2;
+          text-decoration: none; }
   body .portfolio-demo-button {
     font-family: "Open Sans", sans-serif;
     font-weight: 300 !important; }

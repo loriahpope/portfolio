@@ -37,8 +37,8 @@
                     <a class="dropdown-item active" href="portfolio-main.html" onclick="ga('send', 'event', 'navbar', 'Portfolio Main')">Portfolio <span class="sr-only">(current)</span></a>
                     <a class="dropdown-item" href="help/help-details.html" onclick="ga('send', 'event', 'navbar', 'Employee Help Page')">Employee Help Page</a>
                     <a class="dropdown-item" href="idea/idea-details.html" onclick="ga('send', 'event', 'navbar', 'Employee Idea Site')">Employee Idea Site</a>
-                    <a class="dropdown-item" href="icons/icon-details.html"onclick="ga('send', 'event', 'navbar', 'Material Design Icons')">Material Design Icons</a>
                     <a class="dropdown-item" href="time/time-details.html" onclick="ga('send', 'event', 'navbar', 'Employee Vacation Tracker')">Employee Vacation Tracker</a>
+                    <a class="dropdown-item" href="icons/icon-details.html"onclick="ga('send', 'event', 'navbar', 'Material Design Icons')">Material Design Icons</a>
                 </div>
             </li>
         </ul>
@@ -46,7 +46,12 @@
 </nav>
 <!-- End Navbar -->
 
-<div class="container" style="margin: 108px auto;">
+<div class="container" style="margin: 54px auto 108px auto;">
+    <div class="row" style="padding-bottom: 20px;">
+        <div class="col-12 text-center">
+            <img class="img-fluid" src="../images/process-narrow.png">
+        </div>
+    </div>
     <div class="row">
         <h1 class="h1-site">Portfolio</h1>
     </div>
@@ -61,9 +66,9 @@
         </div>
     </div>
     <div class="row" style="padding: 20px 0;">
-        <div class="col-12 text-center">
-            <img class="img-fluid" src="../images/process-narrow.png">
-        </div>
+        <!--<div class="col-12 text-center">-->
+            <!--<img class="img-fluid" src="../images/process-narrow.png">-->
+        <!--</div>-->
 
         <!--<p class="col-12 project-description">-->
             <!--<strong>Design Process</strong>-->
@@ -77,26 +82,26 @@
     <div class="row hidden-xs-down">
         <div id="help" class="col-12 text-center portfolio-img" onclick="location.href='help/help-details.html';ga('send', 'event', 'portfolio-link', 'Help Details');"></div>
         <div id="idea" class="col-12 text-center portfolio-img" onclick="location.href='idea/idea-details.html';ga('send', 'event', 'portfolio-link', 'MyIdea Details');"></div>
-        <div id="icons" class="col-12 text-center portfolio-img" onclick="location.href='icons/icon-details.html';ga('send', 'event', 'portfolio-link', 'Icons');"></div>
         <div id="time" class="col-12 text-center portfolio-img" onclick="location.href='time/time-details.html';ga('send', 'event', 'portfolio-link', 'Time');">Time</div>
+        <div id="icons" class="col-12 text-center portfolio-img" onclick="location.href='icons/icon-details.html';ga('send', 'event', 'portfolio-link', 'Icons');"></div>
     </div>
 
     <div class="row hidden-sm-up">
         <div id="help-mobile" class="col-12 text-center portfolio-img" onclick="location.href='help/help-details.html';ga('send', 'event', 'portfolio-link', 'Help Details');">
-            <img class="img-fluid" src="../images/blanks/help2.jpg">
+            <img class="img-fluid" src="../images/blanks/help2.jpg" alt="Mockup psd created by Aleksandr_samochernyi - Freepik.com">
             <div class="mobile-content">Employee Help Screen</div>
         </div>
         <div id="idea-mobile" class="col-12 text-center portfolio-img" onclick="location.href='idea/idea-details.html';ga('send', 'event', 'portfolio-link', 'MyIdea Details');">
-            <img class="img-fluid" src="../images/blanks/idea2.jpg">
+            <img class="img-fluid" src="../images/blanks/idea2.jpg" alt="Mockup psd created by Aleksandr_samochernyi - Freepik.com">
             <div class="mobile-content">Employee Idea Site</div>
         </div>
-        <div id="icons-mobile" class="col-12 text-center portfolio-img" onclick="location.href='icons/icon-details.html';ga('send', 'event', 'portfolio-link', 'Icons');">
-            <img class="img-fluid" src="../images/blanks/icons2.jpg">
-            <div class="mobile-content">Material Icons</div>
-        </div>
         <div id="time-mobile" class="col-12 text-center portfolio-img" onclick="location.href='time/time-details.html';ga('send', 'event', 'portfolio-link', 'Time');">
-            <img class="img-fluid" src="../images/blanks/time2.jpg">
+            <img class="img-fluid" src="../images/blanks/time2.jpg" alt="">
             <div class="mobile-content">Vacation Request Site</div>
+        </div>
+        <div id="icons-mobile" class="col-12 text-center portfolio-img" onclick="location.href='icons/icon-details.html';ga('send', 'event', 'portfolio-link', 'Icons');">
+            <img class="img-fluid" src="../images/blanks/icons2.jpg" alt="">
+            <div class="mobile-content">Material Icons</div>
         </div>
     </div>
 </div>
